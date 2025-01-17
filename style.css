@@ -42,7 +42,7 @@ body{
     transition: color 0.3s, transform 0.3s;
 }
 .nav-links a:hover{
-    color: #FDD969;
+    color: #EBE7CA;
     transform: scale(1.1);
 }
 .section-title{
@@ -67,10 +67,12 @@ body{
     text-align: center;
     color: #fff;
     animation: fadeIn 2s ease-in;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    background: #ebe7ca;
+    color: black;
+} 
 .btn{
-    background-color: #C69143;
+    background-color: #000;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -81,7 +83,7 @@ body{
     transition: background-color 0.3s, transform 0.3s;
 }
 .btn:hover{
-    background-color: #FDD969;
+    background-color: #222222;
     transform: translateY(-3px);
 }
 .hero-title{
@@ -249,7 +251,7 @@ body{
     transition: background 0.3s, transform 0.3s;
 }
 .contact .contact-form button:hover{
-    background: #FDD969;
+    background: #C69143;
     transform: translateY(-3px);
 }
 
