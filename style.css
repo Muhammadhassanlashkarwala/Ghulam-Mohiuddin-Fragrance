@@ -11,6 +11,10 @@ body{
     color: #333;
     overflow-x: hidden;
 }
+@font-face {
+    font-family: AstaghfirullohDemoRegular;
+    src: url(assets/AstaghfirullohDemoRegular.ttf);
+}
 /* Navbar */
 .navbar{
     display: flex;
