@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: ; */
 }
 body{
     font-family: sans-serif;
@@ -13,7 +12,7 @@ body{
 }
 @font-face {
     font-family: AstaghfirullohDemoRegular;
-    src: url(assets/AstaghfirullohDemoRegular.ttf);
+    src: url(assets/Marionte.otf);
 }
 /* Navbar */
 .navbar{
