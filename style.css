@@ -63,7 +63,7 @@ body{
 }
 
 /* Hero Section */
-.home{
+/* .home{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -72,15 +72,30 @@ body{
     text-align: center;
     color: #fff;
     animation: fadeIn 2s ease-in;
-    /* background: #ebe7ca; */
     background-image: url('images/bg2.jpeg');
     background-repeat: no-repeat;
     background-position:center ;
     background-size: cover;
     opacity: 0.9;
-    /* background-image: url('images/ghulam.jpeg'); */
     color: black;
-} 
+}  */
+.home {
+    min-height: 100vh;  /* 100% viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+    color: black;
+    animation: fadeIn 2s ease-in;
+    background-image: url('images/bg2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 5rem 2rem; /* Adjust padding */
+}
 .btn{
     background-color: #000;
     color: #fff;
@@ -111,7 +126,6 @@ body{
     justify-content: space-around;
     margin: 2rem 0;
     color: black;
-    /* opacity: 0.2; */
     animation: slideIn 2s ease-out;
 }
 .feature-item{
@@ -320,11 +334,9 @@ footer{
         padding-left: 1rem;
     }
     .hero-title{
-        margin-top: 26.5rem;
         font-size: 1.8rem;
     }
     .hero-subtitle{
-        margin-top: 0;
         font-size: 1rem;
     }
     .feature-item{
@@ -340,7 +352,6 @@ footer{
     .testimonials{
         margin-top: -2rem;
         padding: 0 1rem;
-        margin-bottom: 27rem;
     }
     #about{
         padding: 1rem;
@@ -371,5 +382,39 @@ footer{
     }
     .navbar{
         padding: 1.8rem 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem; 
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .feature-item {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* .home {
+        min-height: 50vh;
+    } */
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 }
