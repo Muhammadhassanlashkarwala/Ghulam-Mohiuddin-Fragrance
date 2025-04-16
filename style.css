@@ -15,40 +15,41 @@ body{
     src: url(assets/Marionte.otf);
 }
 /* Navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    color: #fff;
-    padding: 0.3rem 2rem;
-    position: sticky;
+
+.header{
+    position: absolute;
     top: 0;
-    z-index: 1000;
-    animation: slidedowm 0.8s ease-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left: 0;
+    width: 100%;
+    padding: 0.3rem 5%;
+ background: #000000;
+ filter: drop-shadow(10px);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 100;
 }
-.logo{
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #f39c12;
-    animation: fadeIn 1s ease-in;
+.header span{
+    color: white;
 }
-.nav-links{
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+.navbar a{
+    font-size: 1.5rem;
+
+    color: white;
+    margin-left: 3rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;   
 }
-.nav-links a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s, transform 0.3s;
+.navbar a:hover{
+/* color: var(--main-color); */
+color: #fdd868;
+border-bottom: 3px solid var(--main-color);
 }
-.nav-links a:hover{
+#menu-icon{
+    font-size: 2.5rem;
     color: #fdd868;
-    transform: scale(1.1);
+    display: none;
 }
 .section-title{
     font-size: 3rem;
@@ -56,10 +57,62 @@ body{
     text-align: center;
     animation: fadeIn 2s ease-out;
 }
-#menu-icons{
-    font-size: 2rem;
-    color: white;
-    display: none;
+
+@media (max-width: 995px) {
+    #menu-icon{
+       display: block;
+    }   
+    .navbar{
+       position: absolute;
+       top: 100%;
+       right: 0;
+       width: 40%;
+       border-left: 3px solid black;
+       border-bottom: 3px solid black;
+       border-bottom-left-radius: 2rem;
+       padding: 1rem 3%;
+       background: rgba(13, 12, 12, 0.1);
+       border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+       display: none;
+    }
+    .navbar.active {
+       display: block;
+    }
+    .navbar a{
+       display: block;
+       font-size: 1.5rem;
+       margin: 3rem 0;
+    }
+   .navbar a:hover{
+    color: black;
+       border-radius: 0.5rem;
+       border-bottom: 0.5rem solid var(--main-color);
+   }
+   }
+
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 0.5rem 5%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .navbar a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (max-width: 420px) {
+    .header {
+        padding: 0.5rem 5%;
+    }
+    .navbar a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
 }
 
 /* Hero Section */
@@ -94,7 +147,7 @@ body{
     background-position: center;
     background-size: cover;
     opacity: 0.9;
-    padding: 5rem 2rem; /* Adjust padding */
+    padding: 9rem 2rem; /* Adjust padding */
 }
 .btn{
     background-color: #000;

@@ -1,11 +1,11 @@
 // Menu Section
-let menuIcons = document.querySelector("#menu-icons");
+let menuIcon = document.querySelector("#menu-icon");
 let navBar = document.querySelector(".navbar");
-let section = document.querySelector("section");
+let sections = document.querySelector("section");
 let navLinks = document.querySelector("header nav a");
 
 window.onscroll = () => {
-    section.forEach(sec => {
+    sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
@@ -20,8 +20,7 @@ window.onscroll = () => {
     })
 }
 
-menuIcons.onclick = () =>{
-    console.log("Chal raha ho!");
-    menuIcons.classList.toggle("bx-x");
+menuIcon.onclick = () =>{
+    menuIcon.classList.toggle("bx-x");
     navBar.classList.toggle("active");
 }
